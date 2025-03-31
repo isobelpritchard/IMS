@@ -1,9 +1,6 @@
 import { createContext, useState, useMemo } from "react";
 import { createTheme } from "@mui/material";
 
-// TODO: edit colours to be light and dark mode in my theme!!!!
-// REWATCH VID IF NEEDED
-
 // colour design tokens
 export const tokens = (mode) => ({
   ...(mode === "dark"
@@ -67,7 +64,7 @@ export const themeSettings = (mode) => {
       ...(mode === "dark"
         ? {
             primary: {
-              main: colours.primary[500],
+              main: colours.primary[400],
             },
             secondary: {
               main: colours.grey[500],
@@ -75,15 +72,15 @@ export const themeSettings = (mode) => {
             neutral: {
               dark: colours.grey[700],
               main: colours.grey[500],
-              light: colours.grey[100],
+              light: colours.grey[700],
             },
             background: {
-              default: colours.primary[500],
+              default: colours.primary[800],
             },
           }
         : {
             primary: {
-              main: colours.primary[100],
+              main: colours.primary[400],
             },
             secondary: {
               main: colours.grey[500],
@@ -91,10 +88,10 @@ export const themeSettings = (mode) => {
             neutral: {
               dark: colours.grey[700],
               main: colours.grey[500],
-              light: colours.grey[100],
+              light: colours.grey[300],
             },
             background: {
-              default: "#fcfcfc",
+              default: colours.primary[800],
             },
           }),
     },
@@ -110,7 +107,7 @@ export const themeSettings = (mode) => {
         fontSize: 32,
       },
       h3: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+        fontFamily: ["Boldonse"].join(","),
         fontSize: 24,
       },
       h4: {

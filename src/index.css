@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
 html,
 body,
 #root,
 .app,
-.content  {
+.content {
   height: 100%;
   width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .app {
@@ -21,7 +22,7 @@ body,
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #e0e0e0
+  background: #e0e0e0;
 }
 
 /* Handle */
